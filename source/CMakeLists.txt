@@ -53,8 +53,4 @@ add_dependencies(example glfw nanovg ${COPY_BINARY})
 add_executable(aufgabe1
   aufgabe1.cpp
   )
-target_link_libraries(aufgabe1
-  glfw
-  ${GLFW_LIBRARIES}
-  nanovg
-  ${OPENGL_LIBRARIES})
+
