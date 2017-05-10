@@ -49,3 +49,12 @@ target_link_libraries(clock
   ${OPENGL_LIBRARIES})
 add_dependencies(example glfw nanovg ${COPY_BINARY})
 
+# Build aufgabe1
+add_executable(aufgabe1
+  aufgabe1.cpp
+  )
+target_link_libraries(aufgabe1
+  glfw
+  ${GLFW_LIBRARIES}
+  nanovg
+  ${OPENGL_LIBRARIES})
