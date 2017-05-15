@@ -4,6 +4,7 @@
 #include <iostream> // std::cout
 #include <iterator> // std::ostream_iterator<>
 #include <set>      // std::set<>
+#include <map>      // std::map<>
 
 int main ()
 {
@@ -37,6 +38,16 @@ int main ()
   
   std::cout << "Number of elements in s0: " << s0.size() << "\n";
 
-    std::copy(std::begin(s1), std::end(s1), 
-    std::ostream_iterator <unsigned int>(std::cout, "\n")); 
+  std::copy(std::begin(s1), std::end(s1), 
+  std::ostream_iterator <unsigned int>(std::cout, "\n")); 
+
+  std::map<unsigned int, unsigned int> m0;
+  for(auto& l : l0){
+    m0[l] += 1;   
+  }
+
+  for(auto& m : m0){
+    std::cout << m.first << ":" << m.second << "\n"; 
+  }
+
 }
