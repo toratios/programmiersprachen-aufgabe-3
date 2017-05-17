@@ -13,12 +13,7 @@ bool is_multiple_of_3(unsigned int x){
 }
 
 bool is_not_multiple_of_3(unsigned int x){
-  if(x % 3 == 0){
-    return false;
-  }
-  else{
-    return true;
-  }
+  return !is_multiple_of_3(x);
 }
 
 TEST_CASE("filter alle vielfache von drei", "[erase]")

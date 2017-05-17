@@ -4,7 +4,7 @@
 # include "vec2.hpp" 
 # include "mat2.hpp"
 # include "color.hpp"
-# include "window.hpp"
+//# include "window.hpp"
 
 
 class Circle{
@@ -22,9 +22,13 @@ class Circle{
     float get_r() const;
     Color const& get_color() const; 
     float circumference() const;
-    void draw(Window const& win);
-    void draw(Window const& win, Color const& col);
+  /*void draw(Window const& win);
+    void draw(Window const& win, Color const& col); */
     bool is_inside(Vec2 const& p);
+
+    bool operator < (Circle const& c);
+    bool operator > (Circle const& c);
+    bool operator == (Circle const& c);
 };
 
 # endif

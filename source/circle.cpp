@@ -38,7 +38,7 @@ float Circle::circumference() const{
     float circ = 2*M_PI*this->r_;
     return circ;
 }
-
+/*
 void Circle::draw(Window const& win){
     Vec2 rad1{r_,0.0};
     Vec2 rad2{rad1};
@@ -66,7 +66,7 @@ void Circle::draw(Window const& win, Color const& col){
         rad1 = rad2;
     }
 }
-
+*/
 bool Circle::is_inside(Vec2 const& p){
     float a = p.x_ - center_.x_;
     float b = p.y_ - center_.y_;
@@ -77,3 +77,15 @@ bool Circle::is_inside(Vec2 const& p){
         return false;
     }
 } 
+
+bool Circle::operator < (Circle const & c){
+    return (r_ < c.r_);
+}
+
+bool Circle::operator > (Circle const & c){
+    return (r_ > c.r_);
+}
+
+bool Circle::operator == (Circle const & c){
+    return (r_ == c.r_);
+}
