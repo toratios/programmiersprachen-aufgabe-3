@@ -13,9 +13,9 @@ add_executable(aufgabe5
   aufgabe5.cpp
   )
 
-# Build aufgabe7bis9
-add_executable(aufgabe7bis9
-  aufgabe7bis9.cpp
+# Build aufgabe7bis10
+add_executable(aufgabe7bis10
+  aufgabe7bis10.cpp
   circle.cpp
   vec2.cpp
   mat2.cpp
