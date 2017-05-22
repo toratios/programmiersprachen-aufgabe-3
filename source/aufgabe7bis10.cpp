@@ -25,7 +25,7 @@ TEST_CASE("Lamdbda sort","[sort]")
     c = Circle{Vec2 {0,0},float(std::rand()%100)};
   }
 
-  std::sort(vec_c.begin(), vec_c.end(), [](Circle a, Circle b){return a < b;});
+  std::sort(vec_c.begin(), vec_c.end(), [](Circle& a, Circle& b){return a < b;});
 
   REQUIRE(std::is_sorted(vec_c.begin(), vec_c.end()));
 }
