@@ -4,6 +4,7 @@
 #include <algorithm>
 #include "circle.hpp"
 
+
 TEST_CASE("Vergleichsoperator für Circle", "[operator]")
 {
   std::vector<Circle> vec_c(10);

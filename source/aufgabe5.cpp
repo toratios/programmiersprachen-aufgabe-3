@@ -3,6 +3,7 @@
 #include <cmath>
 #include <algorithm>
 
+
 bool is_multiple_of_3(unsigned int x){
   if(x % 3 == 0){
     return true;

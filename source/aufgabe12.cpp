@@ -3,7 +3,6 @@
 #include <cmath>
 #include <algorithm>
 #include "circle.hpp"
-#include "vec2.hpp"
 
 
 TEST_CASE("copy_Circle", "[copy]")
