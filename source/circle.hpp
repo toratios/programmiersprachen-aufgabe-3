@@ -15,6 +15,7 @@ class Circle{
   public:
     Circle();
     Circle(Vec2 const& center, float r);
+    Circle(float r);
     Circle(Color const& col);
     Circle(Vec2 const& center, float r, Color const& col);
 

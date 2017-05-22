@@ -21,3 +21,12 @@ add_executable(aufgabe7bis10
   mat2.cpp
   color.cpp
 )
+
+# Build aufgabe11
+add_executable(aufgabe11
+  aufgabe11.cpp
+  circle.cpp
+  vec2.cpp
+  mat2.cpp
+  color.cpp
+  )

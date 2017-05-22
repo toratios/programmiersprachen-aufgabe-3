@@ -12,6 +12,11 @@ Circle::Circle(Vec2 const& center, float r) :
     r_{r},
     color_{Color{}} {}
 
+Circle::Circle(float r) :
+    center_{Vec2{0,0}},
+    r_{r},
+    color_{Color{}} {}
+
 Circle::Circle(Color const& col) :
     center_{Vec2{1.0,1.0}},
     r_{1.0},

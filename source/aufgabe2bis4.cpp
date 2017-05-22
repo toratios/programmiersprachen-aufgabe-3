@@ -17,7 +17,7 @@ int main ()
   std::copy(std::begin(l0), std::end(l0), std::begin(v0));
 
   //std::copy(std::begin(l0), std::end(l0), 
-  //  std::ostream_iterator <unsigned int>(std::cout, "\n")); 
+    //std::ostream_iterator <unsigned int>(std::cout, "\n")); 
 
   std::set<unsigned int> s0;
   for(auto& l : l0){
@@ -33,9 +33,11 @@ int main ()
     s1.erase(s1.find(s));
   }
 
-  std::copy(std::begin(s0), std::end(s0), 
-    std::ostream_iterator <unsigned int>(std::cout, "\n")); 
+  //std::copy(std::begin(s0), std::end(s0), 
+    //std::ostream_iterator <unsigned int>(std::cout, "\n")); 
   
+  std::cout << "\nAufgabe 3.3 \n \n";
+
   std::cout << "Number of elements in s0: " << s0.size() << "\n";
 
   std::copy(std::begin(s1), std::end(s1), 
@@ -45,6 +47,8 @@ int main ()
   for(auto& l : l0){
     m0[l] += 1;   
   }
+
+  std::cout << "\nAufgabe 3.4 \n \n";
 
   for(auto& m : m0){
     std::cout << m.first << ":" << m.second << "\n"; 
